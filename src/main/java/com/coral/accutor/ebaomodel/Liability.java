@@ -1,4 +1,4 @@
-package com.coral.accutor;
+package com.coral.accutor.ebaomodel;
 
 import lombok.Data;
 

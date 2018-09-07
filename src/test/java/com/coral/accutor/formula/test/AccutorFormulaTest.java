@@ -1,25 +1,24 @@
 package com.coral.accutor.formula.test;
 
-import com.coral.accutor.AccutorDefinition;
-import com.coral.accutor.Liability;
-import com.coral.accutor.formula.AccutorFormula;
+import com.coral.accutor.ebaomodel.EbaoAccutorDefinition;
+import com.coral.accutor.ebaomodel.Liability;
+import com.coral.accutor.formula.EbaoAccutorFormula;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 public class AccutorFormulaTest {
 
-    AccutorFormula accutorFormula = new AccutorFormula();
-    AccutorDefinition ad;
+    EbaoAccutorFormula accutorFormula = new EbaoAccutorFormula();
+    EbaoAccutorDefinition ad;
     Liability liability;
 
     @Before
     public void before() {
-        ad = new AccutorDefinition();
+        ad = new EbaoAccutorDefinition();
         ad.setParam1(new BigDecimal("500"));
         ad.setParam2(new BigDecimal("200"));
         ad.setFeeLevel(1);

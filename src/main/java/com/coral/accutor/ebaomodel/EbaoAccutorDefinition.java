@@ -1,11 +1,11 @@
-package com.coral.accutor;
+package com.coral.accutor.ebaomodel;
 
 import lombok.Data;
 
 import java.math.BigDecimal;
 
 @Data
-public class AccutorDefinition {
+public class EbaoAccutorDefinition {
 
     private String productCode;
     private String liability;
